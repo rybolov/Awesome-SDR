@@ -1,0 +1,15 @@
+This directory contains samples of ThermoPro TP-20 signals.
+
+To capture these, I used rtl_433:
+rtl_433 -R 97 -f 433.92M -S known
+
+To use:
+rtl_433 g001_433.92M_250k.cu8
+rtl_433 -A g001_433.92M_250k.cu8
+URH => Load File
+
+
+References:
+https://fccid.io/2AI4N-TP20
+https://triq.org/rtl_433/#running
+https://github.com/merbanan/rtl_433

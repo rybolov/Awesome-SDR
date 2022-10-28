@@ -1,0 +1,16 @@
+This directory contains a "baker's dozen" samples of Encoder Receiver Transmitter (ERT) Standard Consumption Message (SCM).
+I chose this because these messages are very formatted so they are comparatively easy to learn URH on.
+
+To capture these, I used rtl_433:
+rtl_433 -R 149 -f 915M -S known
+
+To use:
+rtl_433 g001_915M_1000k.cu8
+rtl_433 -A g001_915M_1000k.cu8
+URH => Load File
+
+
+References:
+https://en.wikipedia.org/wiki/Encoder_receiver_transmitter
+https://triq.org/rtl_433/#running
+https://github.com/merbanan/rtl_433
