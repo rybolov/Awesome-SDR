@@ -7,7 +7,7 @@ zip flex.zip flex.raw
 gpg --symmetric --cipher-algo aes256 -o flex.zip.gpg flex.zip
 
 To use:
-Ask me for the password.  Because PII, so I couldn't just throw it unencrypted on GitHub.
+Ask me for the password.  Because PII and other stuff, so I couldn't just throw it unencrypted on GitHub.
 gpg --output flex.zip --decrypt flex.zip.gpg
 unzip flex.zip
 multimon-ng -a FLEX -a POCSAG512 -a POCSAG1200 -a POCSAG2400 -t raw flex.raw
@@ -15,3 +15,4 @@ multimon-ng -a FLEX -a POCSAG512 -a POCSAG1200 -a POCSAG2400 -t raw flex.raw
 References:
 https://www.ronan.bzh/p/decoding-pocsag-on-ubuntu-with-a-rtl-sdr-dongle/
 https://github.com/EliasOenal/multimon-ng
+https://www.reddit.com/r/RTLSDR/comments/1adpze/are_there_rules_regarding_listening_to_pagers/
